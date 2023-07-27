@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="index.js" defer></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <style>
+        #map {height: 500px;
+            background-color: #ccc;
+        }
+    </style>
+
+    
+    <div>
+        <!--user interface portion.-->
+        <!--two search bars one for user location one for search criteria-->
+        <form>
+            <label for="yLocation">Your location</label>
+            <input type="text" id="yLocation" name="yLocation"> <br>
+
+            <label for="search">What would you like to look for?</label>
+            <select name="search" id="search">
+                <option value="coffee">Coffee</option>
+                <option value="resturaunt">Resturaunts</option>
+                <option value="hotel">Hotels</option>
+                <option value="market">Markets</option>
+            </select>
+            
+        </form>
+        
+        <button id="submit">Submit</button>
+        
+        
+    </div>
+
+    <div id="map">
+        <!--map goes here-->
+    </div>
+
+</body>
+</html>
